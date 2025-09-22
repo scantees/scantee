@@ -257,44 +257,27 @@
         
         <!-- Loading Screen -->
         <div id="loading-screen">
-            <div class="loading-text">🚀 LOADING YOUR FREE BITCOIN... 🚀</div>
+            <div class="loading-text">CONNECTING TO BLOCKCHAIN</div>
             <div class="bitcoin-icon">₿</div>
             <div class="progress-bar">
                 <div class="progress-fill"></div>
             </div>
-            <p style="color: #666; font-size: 14px;">Connecting to blockchain...</p>
+<!--             <p style="color: #666; font-size: 14px;">Connecting to blockchain...</p> -->
         </div>
 
         <!-- Reveal Content -->
         <div id="reveal-content" class="reveal-content">
             <!-- Meme placeholder - you can replace with actual meme image -->
-          <img src="dreaming.gif" alt="Meme" class="meme-image">
-            <!-- <div class="meme-image" style="background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); width: 400px; height: 300px;">
+            <img src="dreaming.gif" alt="Meme" class="meme-image">
+<!--             <div class="meme-image" style="background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); width: 400px; height: 300px;">
                 😴<br>
                 KEEP<br>
                 DREAMING
             </div> -->
             
-            <button class="order-button" onclick="showPopup()">
+            <a href="https://your-store-link-here.com" class="order-button" target="_blank">
                 BUY THIS TEE INSTEAD
-            </button>
-        </div>
-    </div>
-
-    <!-- Popup -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-popup" onclick="hidePopup()">&times;</span>
-            <h2 style="color: #333; margin-bottom: 20px;">🎉 Want Your Own QR Prank? 🎉</h2>
-            <p style="color: #666; margin-bottom: 20px;">
-                Get custom QR codes that lead to hilarious gotcha pages like this one!
-            </p>
-            <a href="https://my-store-1030145.creator-spring.com" class="order-button" target="_blank">
-                Visit Our Store
             </a>
-            <p style="font-size: 12px; color: #999; margin-top: 15px;">
-                * No actual Bitcoin was harmed in the making of this prank
-            </p>
         </div>
     </div>
 
@@ -321,22 +304,6 @@
             document.getElementById('reveal-content').style.display = 'block';
             createSparkles();
         }, 4500);
-
-        // Popup functions
-        function showPopup() {
-            document.getElementById('popup').style.display = 'flex';
-        }
-
-        function hidePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-
-        // Close popup when clicking outside
-        document.getElementById('popup').addEventListener('click', function(e) {
-            if (e.target === this) {
-                hidePopup();
-            }
-        });
 
         // Add some extra fun interactions
         document.addEventListener('DOMContentLoaded', function() {
